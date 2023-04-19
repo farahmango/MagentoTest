@@ -5,9 +5,9 @@
     <classes>
       <class name="MyTestCases">
         <methods>
+          <include name="addItems"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="signIn"/>
         </methods>
       </class> <!-- MyTestCases -->
     </classes>

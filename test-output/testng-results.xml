@@ -1,25 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-16T02:30:58 EEST" name="Default suite" finished-at="2023-04-16T02:31:11 EEST" duration-ms="12835">
+  <suite started-at="2023-04-19T04:10:28 EEST" name="Default suite" finished-at="2023-04-19T04:11:14 EEST" duration-ms="46044">
     <groups>
     </groups>
-    <test started-at="2023-04-16T02:30:58 EEST" name="Default test" finished-at="2023-04-16T02:31:11 EEST" duration-ms="12835">
+    <test started-at="2023-04-19T04:10:28 EEST" name="Default test" finished-at="2023-04-19T04:11:14 EEST" duration-ms="46044">
       <class name="MyTestCases">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:MyTestCases@54534abf]" started-at="2023-04-16T02:30:58 EEST" name="beforeTest" finished-at="2023-04-16T02:31:00 EEST" duration-ms="2621" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:MyTestCases@1efdcd5]" started-at="2023-04-19T04:10:28 EEST" name="beforeTest" finished-at="2023-04-19T04:10:30 EEST" duration-ms="2636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="signUp()[pri:1, instance:MyTestCases@54534abf]" started-at="2023-04-16T02:31:00 EEST" name="signUp" finished-at="2023-04-16T02:31:05 EEST" duration-ms="4853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method signature="signIn()[pri:2, instance:MyTestCases@54534abf]" started-at="2023-04-16T02:31:05 EEST" name="signIn" finished-at="2023-04-16T02:31:10 EEST" duration-ms="5034" status="PASS">
+        <test-method signature="signIn()[pri:2, instance:MyTestCases@1efdcd5]" started-at="2023-04-19T04:10:31 EEST" name="signIn" finished-at="2023-04-19T04:10:36 EEST" duration-ms="5358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:MyTestCases@54534abf]" started-at="2023-04-16T02:31:10 EEST" name="afterTest" finished-at="2023-04-16T02:31:11 EEST" duration-ms="285" status="PASS">
+        <test-method signature="addItems()[pri:3, instance:MyTestCases@1efdcd5]" started-at="2023-04-19T04:10:36 EEST" name="addItems" finished-at="2023-04-19T04:11:14 EEST" duration-ms="37977" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [15] but found [30]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [15] but found [30]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at MyTestCases.addItems(MyTestCases.java:196)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItems -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:MyTestCases@1efdcd5]" started-at="2023-04-19T04:11:14 EEST" name="afterTest" finished-at="2023-04-19T04:11:14 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
