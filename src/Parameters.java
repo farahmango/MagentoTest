@@ -17,11 +17,16 @@ public class Parameters {
 	
 	String firstName = "farah";
 	String lastName = "go";
-	String email = "farah502@gmail.com";
-	String pass = "farah@123";
+	String email = "farahmango1@gmail.com";
+	String pass = "farahmango.com123";
 	Random myRandom = new Random();
 	
-	
+	String street = "Riyadah";
+	String building = "40";
+	String door = "5";
+	String city = "Amman";
+	String zipCode = "12563";
+	String phone = "0777856985";
 //	
 //	public class PasswordGenerator {
 //	    private static final String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
